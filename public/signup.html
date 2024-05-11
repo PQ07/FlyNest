@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>flyNest</title>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="sidenav">
+        <nav class="navbar navbar-expand-lg justify-content-center" style="background-color: transparent;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Check In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>             
+        <div class="login-main-text">
+            <h2><br><br><br><img src="Logo.png" alt="Logo" class="white-logo"></h2>
+            <p>SignUp to fly with us...</p>
+        </div>        
+    </div>
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="register-form">
+                <form>
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control name" placeholder="Enter your First Name"  minlength="3"
+                        maxlength="16" pattern="[a-zA-Z]*"  required >
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control lname" placeholder="Enter your Last Name" minlength="3"
+                        maxlength="16" pattern="[a-zA-Z]*">
+                    </div>
+                    <div class="form-group">
+                        <label>Email id</label>
+                        <input type="email" class="form-control email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" class="form-control phone" placeholder="Enter your Phone Number" maxlength="14" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Create Password</label>
+                        <input type="password" class="form-control password" placeholder="Enter a password" id="pass" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Re-enter the password" id="confirm_password" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+    <script src="form.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.login-main-text img {
+    width: 70%; 
+    height: auto;
+    margin-left: 10%;
+    margin-top: -40%;
+}
+
+.login-main-text p{
+    margin-left: 20%;
+    margin-top: -20%;
+}
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.sidenav {
+    height: 100%;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.white-logo {
+    filter: invert(1) brightness(100);
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 60%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn{
+    background-color: #045b5a !important;
+    color: #fff;
+}
+
+.btn a{
+    color: #fff;
+}
+
+
+.forgot-password {
+    display: block;
+    color: #045b5a;
+}
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
